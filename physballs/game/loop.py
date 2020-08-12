@@ -1,5 +1,6 @@
 import pygame
 import controls
+from ball import balls
 
 
 def loop(a_screen, bg_color, running):
@@ -11,7 +12,8 @@ def loop(a_screen, bg_color, running):
         # fill
         a_screen.fill(bg_color)
         # draw
-
+        for ball in balls:
+            ball.display()
         # display
         pygame.display.flip()
 
