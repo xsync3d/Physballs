@@ -10,9 +10,9 @@ as fun and accessible as it can be! it will also work as a tool for my future pr
 * [Pygame](https://www.pygame.org/)
 
 ## Installing
-To install Physballs you first need Python 3.7.x you will also need git.
+To install Physballs you first need Python 3.7.x you will also need [git](https://github.com/git/git/blob/master/INSTALL).
 
-1. Open your terminal and past the following command.
+1. Open your terminal and paste the following command.
 `git clone https://github.com/xsync3d/Physballs`
 if you're on windows you might want to open the folder where you want Physballs installed by pasting the directory in the terminal.
 e.g. `C:\Users\%UserName%\Desktop\Physballs`
@@ -22,6 +22,7 @@ e.g. `C:\Users\%UserName%\Desktop\Physballs`
    2. `chmod +x physballs.py`
 
 3. That's all now all you have to do is run the program! use `python physballs.py`
+or if you're on linux and used chmod you can run the program by using `./physballs.py`
 
 ## Contributing
 You are free to contribute to, redistribute, modify and clone this project, please take a look at [LICENSE.md](https://github.com/xsync3d/Physballs/blob/master/LICENSE.md) for more information.

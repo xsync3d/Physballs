@@ -23,7 +23,7 @@ def set_line_width(line_width):
     lineWidth = line_width
 
 
-def add_point(point_color, position):
+def add_ball(point_color, position):
     pygame.draw.circle(screen, point_color, (int(position[0]), int(position[1])), circleWidth)
 
 
