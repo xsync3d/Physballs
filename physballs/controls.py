@@ -13,22 +13,11 @@ def check_event(running):
         # Check for mouse input
         if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1:
-                print("click")
 
-                # TODO: Change pos so it equals the mouse position
-                ball.add_ball((0, 0), 5, (0, 0), render.white)
+                # TODO: make sure to implement mouse pos here
+                ball.add_ball(pygame.mouse.get_pos(), 5, (0, 0), render.white)
 
         if event.type == pygame.QUIT:
             running = False
 
             sys.exit()
-
-
-def is_mouse_held():
-    if pygame.mouse.get_pressed()[0]:
-        pass
-
-
-def get_mouse_pos() -> tuple:
-    mouse_pos = pygame.mouse.get_pos()
-    return mouse_pos

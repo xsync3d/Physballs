@@ -5,18 +5,12 @@ from game.loop import loop
 (width, height) = (1200, 720)
 (midScreenX, midScreenY) = (width / 2, height / 2)
 screen = pygame.display.set_mode((width, height), 0, 32)
-color = (0, 0, 0)
 lineWidth = 1
 circleWidth = 5
 size = (0, 0)
 black = (0, 0, 0)
 white = (255, 255, 255)
 red = (255, 0, 0)
-
-
-def draw():
-    pygame.display.flip()
-    screen.fill(color)
 
 
 def add_line(line_color, start_pos, end_pos):
