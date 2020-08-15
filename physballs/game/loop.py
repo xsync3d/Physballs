@@ -1,6 +1,7 @@
 import pygame
 import controls
 from ball import balls
+from physics import body_physics
 
 
 def loop(a_screen, bg_color, running):
@@ -8,12 +9,16 @@ def loop(a_screen, bg_color, running):
     while running:
         # Watch for keyboard and mouse events.
         controls.check_event(running)
-
         # fill
         a_screen.fill(bg_color)
         # draw
-        for ball in balls:
+        for i, ball in enumerate(balls):
+            ball.move()
+            ball.bounce()
+            for ball2 in balls[i + 1:]:
+                body_physics.collide(ball, ball2)
             ball.display()
+
         # display
         pygame.display.flip()
 

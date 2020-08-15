@@ -8,3 +8,11 @@ def print_ascii_title():
 ||  \/    |_| |_|\__, |___/_.__/ \__,_|_|_|___/    ||
 ||               |___/                             ||
 =====================================================""")
+
+
+# TODO: finish this thing
+def process_input():
+    user_input = input("#>")
+    command = user_input[0]
+    parameters = user_input[1:]
+    print(user_input)
