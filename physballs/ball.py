@@ -24,7 +24,8 @@ class Ball:
 
     def accelerate(self, vector):
         """ Change angle and speed by a given vector """
-        (self.angle, self.velocity) = add_vectors((self.angle, self.velocity), vector)
+        #self.angle, self.velocity = add_vectors((self.angle, self.velocity, vector)
+        pass
 
     def attract(self, other):
         dx = (self.pos_x - other.pos_x)
