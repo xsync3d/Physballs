@@ -3,7 +3,8 @@ import math
 import random
 
 from graphics.render import screen, width, height
-from physics.body_physics import add_vectors
+
+# from physics.body_physics import add_vectors
 
 balls = []
 
@@ -24,7 +25,7 @@ class Ball:
 
     def accelerate(self, vector):
         """ Change angle and speed by a given vector """
-        #self.angle, self.velocity = add_vectors((self.angle, self.velocity, vector)
+        # self.angle, self.velocity = add_vectors((self.angle, self.velocity, vector)
         pass
 
     def attract(self, other):
@@ -39,7 +40,7 @@ class Ball:
 
     def move(self):
         self.pos_x += math.sin(self.angle) * self.velocity
-        self.pos_x += math.cos(self.angle) * self.velocity
+        self.pos_y += math.cos(self.angle) * self.velocity
 
     def bounce(self):
         if self.pos_x > width - self.size:
@@ -54,6 +55,9 @@ class Ball:
         elif self.pos_y < self.size:
             self.pos_y = 2 * self.size - self.pos_y
             self.angle = math.pi - self.angle
+
+    def __del__(self):
+        print("[WARNING] Planet deleted at: {}".format(self.pos))
 
 
 def add_ball(position: tuple, size, color):
