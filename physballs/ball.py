@@ -23,12 +23,12 @@ class Ball:
     def display(self):
         pygame.draw.circle(screen, self.color, (int(self.pos_x), int(self.pos_y)), self.size, self.size)
 
-    def accelerate(self, vector):
+    def _accelerate(self, vector):
         """ Change angle and speed by a given vector """
         # self.angle, self.velocity = add_vectors((self.angle, self.velocity, vector)
         pass
 
-    def attract(self, other):
+    def _attract(self, other):
         dx = (self.pos_x - other.pos_x)
         dy = (self.pos_y - other.pos_y)
         dist = math.hypot(dx, dy)

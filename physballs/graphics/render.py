@@ -43,6 +43,6 @@ def display_text(text, a_screen, bg_color):
     screen.blit(text_surface, (10, 10))
 
 
-def rand_color():
+def rand_color() -> tuple:
     color = (random.randint(50, 100), random.randint(50, 100), random.randint(50, 100))
     return color

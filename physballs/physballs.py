@@ -3,9 +3,6 @@ import pygame
 
 from game.loop import loop
 from graphics.render import midScreenX, midScreenY, screen
-from graphics.console import print_ascii_title
-
-print_ascii_title()
 
 
 def open_window():
