@@ -4,6 +4,12 @@
 
 Physballs is a small physics engine that I made for fun, and of course, learning purposes.
 
+##Previews
+
+![Balls](https://github.com/xsync3d/Physballs/blob/master/docs/demos/demo1.gif)
+
+![Overflow](https://github.com/xsync3d/Physballs/blob/master/docs/demos/demo1.gif)
+
 ## Technologies
 * [Python 3.7.4](https://www.python.org/)
 * [Pygame](https://www.pygame.org/)
